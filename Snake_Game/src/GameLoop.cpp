@@ -17,6 +17,10 @@ void GameLoop()
 		Snake snake;
 		Apple apple;
 
+		uint64_t timerEnd = SDL_GetTicks64();
+		float frameTime = 0.f;
+		float updateTime = 0.07f;
+
 		snake.LoadTexture(window.GetRenderer());
 		apple.LoadTexture(window.GetRenderer());
 
@@ -30,8 +34,20 @@ void GameLoop()
 				}
 				snake.HandleEvent(event);
 			}
-			snake.Move();
-			snake.CollisionDetection(apple);
+			uint64_t timerStart = SDL_GetTicks64();
+
+			float deltaTime = (timerStart - timerEnd) / 1000.f;
+			frameTime += deltaTime;
+
+			if (frameTime >= updateTime)
+			{
+				snake.Move();
+				snake.CollisionDetection(apple);
+
+				frameTime = 0.f;
+			}
+
+			timerEnd = SDL_GetTicks64();
 
 			// Displaying the game score on the window title
 			std::string Score = "Snake Score: " + std::to_string(snake.GetSnakeSize() * 100);
