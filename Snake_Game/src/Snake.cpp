@@ -41,7 +41,6 @@ void Snake::HandleEvent(SDL_Event& event)
 
 void Snake::Move()
 {
-	SDL_Delay(50);
 	SDL_Point PrevPoint = { m_PosX,m_PosY };
 	m_RenderPoints.emplace_front(PrevPoint, m_MoveDirection);
 

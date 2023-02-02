@@ -36,7 +36,7 @@ public:
 	void Render(SDL_Renderer* Renderer);
 
 private:
-	const float m_SnakeVel = 10.f;
+	const float m_SnakeVel = 20.f;
 
 	int m_SnakeSize;
 	int m_VelX, m_VelY;
