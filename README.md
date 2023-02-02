@@ -1,5 +1,4 @@
 # Snake_Game
-Snake movement temporarily works on frames per second, will be changed in the future
 <details><summary>Image</summary>
 <p>
 
