@@ -5,12 +5,6 @@
 </p>
 </details>
 
-<details><summary>Link to download the archive with exe</summary>
-<p>
-
-https://drive.google.com/uc?export=download&id=1qr6vDlgWSLQBbCfdG1vpiHUz44J1iEKI
-
-</p>
 </details>
 
 <br/>
