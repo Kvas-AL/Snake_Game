@@ -2,8 +2,6 @@
 <details><summary>Image</summary>
 <p>
 
-![image](https://user-images.githubusercontent.com/98063983/209440097-26736af4-e449-4545-a314-19a2ca8b5795.png)
-
 </p>
 </details>
 
